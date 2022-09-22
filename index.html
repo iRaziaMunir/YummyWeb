@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css vendor files -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/assets/FontAwesome-main/css/fontAwesomeAll.min.css">
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+  <!-- css index file -->
+  <link rel="stylesheet" href="/css/index.css">
+  <title>Yummyweb</title>
+</head>
+
+<body>
+<!-- ...............header........................ -->
+  <header class="header d-flex  fixed-top bg-body align-items-between justify-content-between ">
+    <div class="container d-flex align-items-center justify-content-between ">
+      <a href="index.html"class="navbar-brand d-flex  me-2 me-lg-auto">
+        <h1>yummy<span class="text-danger">.</span></h1></a>
+        <!-- toggler button will show nav-links on md and sm -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"></button>
+      <nav class="navbar navbar-expand-lg " id="nav">
+        <ul class="navbar-nav justify-content-between" >
+          <li class="nav-item"><a href="index.html" class="nav-link active" id="home">Home</a></li> 
+          <li class="nav-item"><a href="/html/about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+          <li class="nav-item"><a href="#event-section" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="#chefs-section" class="nav-link">chefs</a></li>
+          <li class="nav-item"><a href="/html/gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item dropdown">
+          <a href="" class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a href="#" class="nav-link"></a>dropdown1</li>
+              <!-- deep drop down -->
+              <li class="nav-item dropdown "><a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">dropdown2</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"> <a href="" class="nav-link">dropdown</a></li>
+                  <li class="nav-item"> <a href="" class="nav-link">dropdown</a></li>
+                  <li class="nav-item"> <a href="" class="nav-link">dropdown</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link"></a>dropdown3</li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="/html/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+        <a href="" class=" book-table  ms-auto me-auto">Book a Table</a>
+        <i class="mobile-nav-toggle mobile-nav-show  d-xl-none bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+ 
+    </div>
+
+  </header>
+<!-- hero section -->
+   <section class="hero-section d-flex align-items-center p-5 mt-5">
+       <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-5 gy-4 order-2 order-lg-1 d-flex flex-column justify-content-center  align-items-center  align-items-lg-start text-center text-lg-start">
+              <h1 data-aos="fade-up">Enjoy Your Healthy <br> Delicious Food</h1>
+                <p class="p-lg-5 ps-lg-0" data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+                  <div class="table-video-div d-flex justify-content-around align-items-center"  data-aos="fade-up" data-aos-delay="200">
+                    <a href="#" class="book-a-table">Book a Table</a>
+                    <a href="#" class=" Watch-video d-flex align-items-center" > <i class="bi bi-play-circle me-2"></i><span> Watch video</span></a>
+                  </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 text-center text-lg-start p-0 p-lg-5">
+              <img id="hero-img" src="assets/images/hero-img.png" class="img-fluid" data-aos="zoom-out" data-aos-delay="300" alt="There is something wrong">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="menu-section" >
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="our-menu-span">OUR MENU </span>
+            <h1 class="our-menu-heading">Check Our <span class="text-danger">Yummy Menu</span></h1>
+          </div>
+          <ul class="nav nav-tabs d-flex justify-content-center" id="menu-ul">
+            <!-- starters -->
+            <li class="nav-item" >
+              <a href="#starters-menu" class="nav-link" id="menu-starter-li" data-bs-toggle="tab" data-target="#starters-menu">Starters</a>
+            </li>
+            <!-- Breakfast -->
+            <li class="nav-item">
+              <a href="#breakfast-menu" class="nav-link" id="menu-breakfast-li" data-bs-toggle="tab" data-target="#breakfast-menu">Breakfast</a>
+            </li>
+            <!-- Lunch -->
+            <li class="nav-item">
+              <a href="#lunch-menu" class="nav-link" id="menu-lunch-li" data-bs-toggle="tab" data-target="#lunch-menu">Lunch</a>
+            </li>
+            <!-- Dinner -->
+            <li class="nav-item">
+              <a href="#dinner-menu" class="nav-link" id="menu-dinner-li" data-bs-toggle="tab" data-target="#dinner-menu">Dinner</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <!-- -------------starters---------------- -->
+            <div class=" tab-pane active show" id="starters-menu">
+              <div class="tab-header text-center">
+                <span class="menu-span">MENU</span>
+                <h1 class="text-danger">Starters</h1>
+              </div>
+              <div class="row gy-5 ">
+                <!-- menu-item 1 -->
+                <div class="col-lg-4 text-center" id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-1.png">
+                    <img src="/assets/images/menu/menu-item-1.png" class="menu-img img-fluid" alt="There is something wrong">
+                  </a>
+                  <h4>Magnam Tiste</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 2 -->
+                <div class="col-lg-4 text-center"  id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-2.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-2.png" alt=""></a>
+                  <h4>Aut Luia</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 3 -->
+                <div class="col-lg-4 text-center"  id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-3.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-3.png" alt=""></a>
+                  <h4>Est Eligendi</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 4 -->
+                <div class="col-lg-4 text-center" id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-4.png">
+                    <img src="/assets/images/menu/menu-item-4.png" class="menu-img img-fluid" alt="There is something wrong">
+                  </a>
+                  <h4>Magnam Tiste</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 5 -->
+                <div class="col-lg-4 text-center"  id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-5.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-5.png" alt=""></a>
+                  <h4>Aut Luia</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 6 -->
+                <div class="col-lg-4 text-center"  id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-6.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-6.png" alt=""></a>
+                  <h4>Est Eligendi</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+              </div>
+            </div>
+            <!-- end starters content -->
+            <!-- ----------Breakfast-------------- -->
+
+            <div class=" tab-pane fade" id="breakfast-menu">
+              <div class="tab-header text-center">
+                <span>MENU</span>
+                <h1 class="text-danger">Breakfast</h1>
+              </div>
+              <div class="row gy-4">
+                <div class="col-lg-4 text-center" id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-1.png">
+                    <img src="/assets/images/menu/menu-item-1.png" class="menu-img img-fluid" alt="There is something wrong">
+                  </a>
+                  <h4>Magnam Tiste</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 2 -->
+                <div class="col-lg-4 text-center" id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-2.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-2.png" alt=""></a>
+                  <h4>Magnam Tiste</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 3 -->
+                <div class="col-lg-4 text-center" id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-3.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-3.png" alt=""></a>
+                  <h4>Magnam Tiste</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 4 -->
+                <div class="col-lg-4 text-center" id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-4.png">
+                    <img src="/assets/images/menu/menu-item-4.png" class="menu-img img-fluid" alt="There is something wrong">
+                  </a>
+                  <h4>Magnam Tiste</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 5 -->
+                <div class="col-lg-4 text-center"  id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-5.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-5.png" alt=""></a>
+                  <h4>Aut Luia</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 6 -->
+                <div class="col-lg-4 text-center"  id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-6.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-6.png" alt=""></a>
+                  <h4>Est Eligendi</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+              </div>
+            </div>
+            <!-- end breakfast content -->
+            <!-- ----------Lunch-------------- -->
+
+            <div class=" tab-pane fade " id="lunch-menu">
+              <div class="tab-header text-center">
+                <span>MENU</span>
+                <h1 class="text-danger">Lunch</h1>
+              </div>
+              <div class="row gy-4">
+                <div class="col-lg-4 text-center" id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-1.png">
+                    <img src="/assets/images/menu/menu-item-1.png" class="menu-img img-fluid" alt="There is something wrong">
+                  </a>
+                  <h4>Magnam Tiste</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 2 -->
+                <div class="col-lg-4 text-center" id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-2.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-2.png" alt=""></a>
+                  <h4>Magnam Tiste</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 3 -->
+                <div class="col-lg-4 text-center" id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-3.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-3.png" alt=""></a>
+                  <h4>Magnam Tiste</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 4 -->
+                <div class="col-lg-4 text-center" id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-4.png">
+                    <img src="/assets/images/menu/menu-item-4.png" class="menu-img img-fluid" alt="There is something wrong">
+                  </a>
+                  <h4>Magnam Tiste</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 5 -->
+                <div class="col-lg-4 text-center"  id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-5.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-5.png" alt=""></a>
+                  <h4>Aut Luia</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 6 -->
+                <div class="col-lg-4 text-center"  id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-6.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-6.png" alt=""></a>
+                  <h4>Est Eligendi</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+              </div>
+            </div>
+            <!-- end lunch content -->
+            <!-- ----------Dinner-------------- -->
+            <div class=" tab-pane fade" id="dinner-menu">
+              <div class="tab-header text-center">
+                <span>MENU</span>
+                <h1 class="text-danger">Dinner</h1>
+              </div>
+              <div class="row gy-4">
+                <div class="col-lg-4 text-center" id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-1.png">
+                    <img src="/assets/images/menu/menu-item-1.png" class="menu-img img-fluid" alt="There is something wrong">
+                  </a>
+                  <h4>Magnam Tiste</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 2 -->
+                <div class="col-lg-4 text-center" id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-2.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-2.png" alt=""></a>
+                  <h4>Magnam Tiste</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 3 -->
+                <div class="col-lg-4 text-center" id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-3.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-3.png" alt=""></a>
+                  <h4>Magnam Tiste</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 4 -->
+                <div class="col-lg-4 text-center" id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-4.png">
+                    <img src="/assets/images/menu/menu-item-4.png" class="menu-img img-fluid" alt="There is something wrong">
+                  </a>
+                  <h4>Magnam Tiste</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 5 -->
+                <div class="col-lg-4 text-center"  id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-5.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-5.png" alt=""></a>
+                  <h4>Aut Luia</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+                <!-- menu-item 6 -->
+                <div class="col-lg-4 text-center"  id="menu-img-container">
+                  <a href="/assets/images/menu/menu-item-6.png"><img class="menu-img img-fluid" src="/assets/images/menu/menu-item-6.png" alt=""></a>
+                  <h4>Est Eligendi</h4>
+                  <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+                  <p class="price">$5.95</p>
+                </div>
+              </div>
+            </div>
+            <!-- end dinner content -->
+          </div>
+      </section>
+<!-- ------------------------------------------------
+        Testimonial section 
+----------------------------------------------------->
+<section id="testimonial-section">
+  <div class="container">
+    <div class="testimonial-header text-center">
+      <span class="testimonial-span">Testimonials</span>
+      <h1>What Are They <span class="text-danger">  Saying About Us</span> </h1>
+      <div id="testimonial-carousel" class="carousel slide" data-bs-ride="#testimonial-carousel" >
+        <!-- indicaters -->
+        <div class="carousel-indicators">
+          <button  id="btn" class="active" type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="0" aria-current="true" aria-label="slide 1"></button>
+          <button  id="btn" type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="1"  aria-label="slide 2"></button>
+          <button  id="btn" type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="2"  aria-label="slide 3"></button>
+          <button  id="btn" type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="3"  aria-label="slide 4"></button>
+        </div>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <!-- slide-1 -->
+          <div class="carousel-item active">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-lg-6" id="testimonial-desc-column">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <h3>Saul Goodman</h3>
+                      <h4>Ceo &amp; Founder</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                </div>
+              </div>
+              <div class="col-lg-2" id="testimonial-img-column" >
+                  <img  src="/assets/images/testimonials/testimonials-1.jpg" class="rounded-circle" alt="There is something wrong">
+              </div>
+            </div>
+          </div>
+          <!-- slide-2 -->
+          <div class="carousel-item">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-6" id="testimonial-desc-column">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <h3>Saul Goodman</h3>
+                      <h4>Ceo &amp; Founder</h4>
+                      <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                </div>
+              </div>
+              <div class="col-2" id="testimonial-img-column">
+                  <img  src="/assets/images/testimonials/testimonials-2.jpg" class="rounded-circle" alt="There is something wrong">
+              </div>
+            </div>
+          </div>
+          <!-- slide-3 -->
+          <div class="carousel-item ">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-6" id="testimonial-desc-column">
+                <div class="testimonial-content ">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <h3>Saul Goodman</h3>
+                      <h4>Ceo &amp; Founder</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                </div>
+              </div>
+              <div class="col-2" id="testimonial-img-column">
+                  <img  src="/assets/images/testimonials/testimonials-3.jpg" class="rounded-circle" alt="There is something wrong">
+              </div>
+            </div>
+          </div>
+          <!-- slide-4-->
+          <div class="carousel-item ">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-6" id="testimonial-desc-column">
+                <div class="testimonial-content ">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <h3>Saul Goodman</h3>
+                      <h4>Ceo &amp; Founder</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                </div>
+              </div>
+              <div class="col-2" id="testimonial-img-column">
+                  <img  src="/assets/images/testimonials/testimonials-4.jpg" class="rounded-circle" alt="There is something wrong">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Events section -->
+<section id="event-section">
+  <div class="container-fluid">
+    <div class="event-header text-center">
+      <span class="event-span">Events</span>
+      <h2 class="share-moments-h2">Share <span class="text-danger "> Your Moments</span> In Our Restaurant</h2>
+    </div>
+    <div id="events-carousel" class=" carousel  slides"  data-bs-ride="#events-carousel">
+      <!-- event carousel indicators -->
+      <div class="carousel-indicators">
+        <button  id="btn" class="active" type="button" data-bs-target="#events-carousel" data-bs-slide-to="0" aria-current="true" aria-label="slide 1"></button>
+        <button  id="btn" type="button" data-bs-target="#events-carousel" data-bs-slide-to="1"  aria-label="slide 2"></button>
+        <button  id="btn" type="button" data-bs-target="#events-carousel" data-bs-slide-to="2"  aria-label="slide 3"></button>
+      </div>
+      <!-- event carousel slides -->
+      <div id="carousel-inner"  class="carousel-inner">
+        
+        <div id="event-item" class="carousel-item active ">
+          <img src="/assets/images/events-1.jpg"  alt="">
+          <div id="event-carousel-caption" class="carousel-caption">
+          <h3 class="event-carousel-capt-h3">Custom Parties</h3>
+              <div class="price align-self-start">$99</div>
+              <p class="description">
+                Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.
+              </p>
+        </div>
+      </div>
+        <!-- slide 2 -->
+        <div id="event-item" class="carousel-item">
+          <img src="/assets/images/events-2.jpg"  alt="">
+          <div  id="event-carousel-caption" class="carousel-caption">
+          <h3>Custom Parties</h3>
+              <div class="price align-self-start">$99</div>
+              <p class="description">
+                Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.
+              </p>
+          </div>
+        </div>
+        <!-- slide 3 -->
+        <div id="event-item" class="carousel-item">
+          <img src="/assets/images/events-3.jpg"  alt="">
+          <div  id="event-carousel-caption" class="carousel-caption">
+          <h3>Custom Parties</h3>
+              <div class="price align-self-start">$99</div>
+              <p class="description">
+                Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.
+              </p>
+          </div>    
+        </div>
+        </div>
+  </div>
+</div>
+</section>
+<!--Our Proffesional Chefs section -->
+<section id="chefs-section" class="chefs-section">
+  <div class="container">
+    <!-- header -->
+    <div class="event-header text-center">
+      <span class="chefs-span">Chefs</span>
+      <h3 class="chefs-h3">Our  <span class="text-danger">Proffesional</span>  Chefs</h3>
+    </div>
+  <!-- profiles of chefs -->
+  <div class="row gy-4 gx-5">
+    <!-- first profile -->
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+      <div class="chef-member">
+      <div class="chef-img">
+        <img src="/assets/images/chefs/chefs-1.jpg" class="img-fluid" alt="">
+        <div class="social">
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+        <!--  about members -->
+        <div class="member-info">
+          <h4>Walter White</h4>
+          <span>Master Chef</span>
+          <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- 2nd profile -->
+    <div class="col-4 profile-col">
+      <div class="chef-member">
+      <div class="chef-img">
+        <img src="/assets/images/chefs/chefs-2.jpg" class="img-fluid" alt="">
+        <div class="social">
+          <a href=""><i class="bi bi-twitter"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+        <!--  about members -->
+        <div class="member-info">
+          <h4>Walter White</h4>
+          <span>Master Chef</span>
+          <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- 3rd profile -->
+    <div class="col-4 profile-col">
+      <div class="chef-member">
+      <div class="chef-img">
+        <img src="/assets/images/chefs/chefs-3.jpg" class="img-fluid" alt="">
+        <div class="social">
+          <a href=""><i class="bi bi-twitter"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+        <!--  about members -->
+        <div class="member-info">
+          <h4>Walter White</h4>
+          <span>Master Chef</span>
+          <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</section>
+<section id="stay-with-us">
+  <div class="container">
+    <div class="stay-with-us-header text-center">
+      <span class="stay-apan">Book A Table</span>
+      <h3 class="stay-heading">Book <span class="text-danger"> Your Stay With</span>  Us</h3>
+    </div>
+    <div class="row gy-0 gx-0">
+      <!-- reservation image container -->
+      <div class="col-lg-4  reservation-img-container">
+        <img src="/assets/images/reservation.jpg" class="reservation-img" alt="There is something wrong">
+      </div>
+      <!-- Reservation form -->
+      <div class="col-lg-8 reservation-form-container ">
+        <form>
+          <div class="row align-items-center g-3">
+              <div class="col-auto">
+                  <label class="visually-hidden" for="inputEmail">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              </div>
+              <div class="col-auto">
+                  <label class="visually-hidden" for="inputPassword">Password</label>
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              </div>
+              </form>
+        <form action=" post" class="form-group">
+        <div class="row gx-3 mb-4">
+          <div class="col-4 ">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="col-4">
+            <input type="email" class="form-control" placeholder="Your email">
+          </div>
+          <div class="col-4">
+            <input type="tel" class="form-control" placeholder="Your Phone">
+          </div>
+          <div class="col-4">
+            <input type="text" class="form-control" placeholder="Date">
+          </div>
+          <div class="col-4">
+            <input type="text" class="form-control" placeholder="Time" name="Time">
+          </div>
+          <div class="col-4">
+            <input type="number" class="form-control" placeholder="Your Name" name="time">
+          </div>
+        </div>
+        <div id=" messag-div" class="form-group">
+          <textarea class="form-control" id="messag"  name="message" rows="5" placeholder="Message"></textarea>
+        </div>
+        
+        <div>
+          <button class="form-book-table"> Book a Table</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Vendor JS Files -->
+  <script  src="js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+                    
+</body>
+</html>

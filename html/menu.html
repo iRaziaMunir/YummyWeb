@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css vendor files -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+  <!-- css index file -->
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/menu.css">
+  <title>Yummyweb</title>
+</head>
+
+<body>
+<!-- ...............header........................ -->
+  <header class="header d-flex  fixed-top bg-body align-items-between justify-content-between ">
+    <div class="container d-flex align-items-center justify-content-between ">
+      <a href="index.html"class="navbar-brand d-flex  me-2 me-lg-auto">
+        <h1>yummy<span class="text-danger">.</span></h1></a>
+        <!-- toggler button will show nav-links on md and sm -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"></button>
+      <nav class="navbar navbar-expand-lg " id="nav">
+        <ul class="navbar-nav justify-content-between" >
+          <li class="nav-item"><a href="index.html" class="nav-link active" id="home">Home</a></li> 
+          <li class="nav-item"><a href="/html/about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="/html/menu.html" class="nav-link">Menu</a></li>
+          <li class="nav-item"><a href="/html/event.html" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="/html/chefs.html" class="nav-link">chefs</a></li>
+          <li class="nav-item"><a href="/html/gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item dropdown">
+          <a href="" class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a href="#" class="nav-link"></a>dropdown1</li>
+              <!-- deep drop down -->
+              <li class="nav-item dropdown "><a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">dropdown2</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"> <a href="" class="nav-link">dropdown</a></li>
+                  <li class="nav-item"> <a href="" class="nav-link">dropdown</a></li>
+                  <li class="nav-item"> <a href="" class="nav-link">dropdown</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link"></a>dropdown3</li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="/html/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+        <a href="" class=" book-table  ms-auto me-auto">Book a Table</a>
+        <i class="mobile-nav-toggle mobile-nav-show  bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    </div>
+  </header>
+ 
+  <script  src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
